@@ -84,7 +84,38 @@ p, span {
     float: right;
     margin: 15px 0px;
     font-size: 12px;
-    color: hsl(245, 75%, 52%)
+    color: hsl(245, 75%, 52%);
+}
+
+#plan-change:active {
+    color: hsl(224, 55%, 54%);
+}
+
+#buttons {
+    width: 85%;
+    margin: 15px auto;
+}
+
+#buttons > button {
+    width: 100%;
+
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: rgb(200, 200, 200) 0px 5px 10px;
+    border-width: 0px;
+}
+
+#proceed {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+
+#proceed:active {
+    background-color: hsl(224, 55%, 54%);
+}
+
+#cancel:active > span{
+    color:rgb(42, 42, 42);
 }
 
 @media (max-width: 375px) {
