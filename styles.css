@@ -1,3 +1,13 @@
+@font-face {
+    font-family: RedHat-Regular;
+    src: url("./fonts/RedHat/static/RedHatDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: RedHat-Bold;
+    src: url("./fonts/RedHat/static/RedHatDisplay-ExtraBold.ttf");
+}
+
 body {
     background-image: url("./images/pattern-background-desktop.svg");
 }
@@ -6,8 +16,30 @@ body {
     width: 450px;
     margin: 20px auto;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
+}
+
+#texts {
+    margin: 0px auto;
+    width: 300px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+p, h1, span {
+    font-family: RedHat-Regular;
+}
+
+h1 {
+    font-family: RedHat-Bold;
+    font-size: 22px;
+    color: rgb(42, 42, 42);
+}
+
+p {
+    color:rgb(100, 100, 100)
 }
 
 @media (max-width: 375px) {
