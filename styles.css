@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 @font-face {
     font-family: RedHat-Regular;
     src: url("./fonts/RedHat/static/RedHatDisplay-Regular.ttf");
@@ -12,6 +17,18 @@ body {
     background-image: url("./images/pattern-background-desktop.svg");
 }
 
+.regular {
+    font-family: RedHat-Regular;
+}
+
+.bold {
+    font-family: RedHat-Bold;
+}
+
+p, h1, span {
+    font-family: RedHat-Regular;
+}
+
 #card {
     width: 450px;
     margin: 20px auto;
@@ -20,30 +37,62 @@ body {
     overflow: hidden;
 }
 
+#content {
+    padding: 0px 30px;
+}
+
 #texts {
-    margin: 0px auto;
+    margin: 25px auto;
     width: 300px;
     text-align: center;
     padding: 10px 20px;
 }
 
-
-p, h1, span {
-    font-family: RedHat-Regular;
-}
-
 h1 {
-    font-family: RedHat-Bold;
+    margin: 10px;
     font-size: 22px;
     color: rgb(42, 42, 42);
 }
 
-p {
+p, span {
     color:rgb(100, 100, 100)
+}
+
+#plan {
+    margin: 10px 50px;
+}
+
+#music-icon {
+    width: 52px;
+    float: left;
+}
+
+#plan-details {
+    float: left;
+    margin: 4px 10px;
+}
+
+#plan-name {
+    color: rgb(42, 42, 42);
+}
+
+#plan-price {
+    font-weight: 300;
+}
+
+#plan-change {
+    float: right;
+    margin: 15px 0px;
+    font-size: 12px;
+    color: hsl(245, 75%, 52%)
 }
 
 @media (max-width: 375px) {
     body {
         background-image: url("./images/pattern-background-mobile.svg");
     }
+}
+
+.clear-float {
+    clear: both;
 }
