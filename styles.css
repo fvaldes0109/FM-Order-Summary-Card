@@ -1,0 +1,17 @@
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+}
+
+#card {
+    width: 450px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+    }
+}
